@@ -7,65 +7,201 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="">
-        <div class="navbar bg-red-100">
+<body class="bg-red-50">
+    <header class="sticky top-0 z-10 bg-white bg-opacity-20">
+        <div class="navbar  flex justify-between ">
 
-            <div class="navbar-start">
-             <button class="btn btn-md bg-lime-300	 text-base font-normal">Bolg</button> 
+            <div class="">
+             <button id="show-add-text" class="btn btn-md bg-lime-300	 text-base font-normal">Bolg</button> 
             </div>
 
-            <div class="flex navbar-center">
+            <div class="flex space-x-2 items-center">
             <img src="./assets/logo.png">
             <p>Donate Banglodesh</p>
             </div>
 
-            <div class="navbar-end">
-                
-              <button class="flex btn "><img src="assets/coin.png"> 5500 BDT</button>
+            <div class="flex bg-white py-2 space-x-1 px-2 rounded-md">
+              <img src="assets/coin.png">
+                <p id="total-amount" >5500</p>
+              <p>BDT</p>
               </div>
           </div>
-          <biv class="flex justify-center mt-4 mx-auto" >
-            <button class="btn btn-md bg-lime-300	">Denotion</button>
-            <button class="btn btn-md ">History</button>
+          <biv class="flex justify-center  mx-auto space-x-4 mt-10 mb-6" >
+            <button id="denotion-button" class="btn btn-md bg-lime-300	">Denotion</button>
+            <button id="historyAmound" class="btn btn-md ">History</button>
            
           </biv>
     </header>
-    <main>
-        <div class="container hero-content mx-auto bg-base-200 ">
-          <div class="flex container mx-auto rounded-lg border-solid border-2 border-indigo-600 ">
+    <!-- main section stert -->
 
-            <div class="hero-content  flex-col lg:flex-row">
-              <img src="./assets/noakhali.png"
-                class="max-w-sm rounded-lg " />
-              <div>
+ <main class="-z-0">
+  <!-- hero scetion-1  -->
+    <div id="add-money-forme">
+  <div  class=" container mx-auto bg-base-200 rounded-lg ">
+    <div class="hero-content flex-col lg:flex-row ">
+      <img
+        src="./assets/noakhali.png"
+        class="w-2/5 rounded-lg " />
+      <div class="space-y-4 sm:space-x-1">
+        <div class="flex bg-red-200 py-2 w-1/5 rounded-md px-2 space-x-2 ">
+          <img src="./assets/coin.png">
+          <P id="account-balance">100</P>
+          <Span>BDT</Span>
+         </div>
+        <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh </h1>
+        <p>The recent floods in Noakhali have caused significant damage to 
+          homes infrastructure.Your donation will help provide essential 
+          supplies and to those affected by this disaster. Every contribution,
+          big or small makes difference. Please join use in supporting the
+          relief efforts and making a positive impact on the lives of those in need.</p>
+          <div>
+            <textarea id="amount-case" type="text" cols="45" rows="5" placeholder="Write Donation Amount"
+            class="input input-bordered" required ></textarea>
+          </div>
 
-                  <div>
-                   <div class="flex bg-yellow-100 ">
-                    <img src="./assets/coin.png">
-                    <P id="account-balance">100</P>
-                    <p>BDT</p>
-                   </div>
-                    <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-1">
-                      The recent floods in Noakhali have caused significant damage to <br>
-                       homes  infrastructure.Your donation will help provide essential <br>
-                       supplies and  to those affected by this disaster. Every contribution,<br>
-                       big or small, makes  difference. Please join use in supporting the relief<br>
-                       efforts and making a positive impact on the lives of those in need.
-                    </p>
-                    <div>
-                      <input id="amount-case" type="text" placeholder="Write Donation Amount"
-                      class="input input-bordered" required />
-                    </div>
-                    <button id="btn-add-money" class="btn btn-md bg-lime-300">Donate Now</button>
-                  </div>
-                  </div>
-  
-          </div> 
-    </main>
+          <div class="">
+            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">Donate Now</button>
+           </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section-start-2 -->
+
+
+  <div class=" container mx-auto bg-base-200 rounded-lg my-3">
+    <div class="hero-content flex-col lg:flex-row ">
+      <img
+        src="./assets/feni.png"
+        class="w-2/5 rounded-lg " />
+      <div class="space-y-4">
+        <div class="flex bg-red-200 py-2 w-1/5 rounded-md px-2 space-x-2">
+          <img src="./assets/coin.png">
+          <P id="account-balance">100</P>
+          <Span>BDT</Span>
+         </div>
+        <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh </h1>
+        <p>The recent floods in Noakhali have caused significant damage to 
+          homes infrastructure.Your donation will help provide essential 
+          supplies and to those affected by this disaster. Every contribution,
+          big or small makes difference. Please join use in supporting the
+          relief efforts and making a positive impact on the lives of those in need.</p>
+          <div>
+            <textarea id="amount-case" type="text" cols="45" rows="5" placeholder="Write Donation Amount"
+            class="input input-bordered" required ></textarea>
+          </div>
+            <div>
+            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">Donate Now</button>
+           </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- hero section-3 -->
+    <div class=" container mx-auto bg-base-200 rounded-lg my-3">
+      <div class="hero-content flex-col lg:flex-row ">
+        <img
+          src="./assets/quota-protest.png"
+          class="w-2/5 rounded-lg " />
+        <div class="space-y-4">
+          <div class="flex bg-red-200 py-2 w-1/5 rounded-md px-2 space-x-2 ">
+            <img src="./assets/coin.png">
+            <P id="account-balance">100</P>
+            <Span>BDT</Span>
+           </div>
+          <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh </h1>
+          <p>The recent floods in Noakhali have caused significant damage to 
+            homes infrastructure.Your donation will help provide essential 
+            supplies and to those affected by this disaster. Every contribution,
+            big or small makes difference. Please join use in supporting the
+            relief efforts and making a positive impact on the lives of those in need.</p>
+            <div>
+              <textarea id="amount-case" type="text" cols="45" rows="5" placeholder="Write Donation Amount"
+              class="input input-bordered" required ></textarea>
+            </div>
+               <div>
+              <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">Donate Now</button>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- add section Bolg start -->
+  <div id="add-section-bolg" class="hidden">
+    <h1 class="text-4xl font-bold ml-4">ImportantFAQ?</h1>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Documet object model(DOM)?</div>
+      <div class="collapse-content">
+        <p>"The  Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically 
+          access and update the content, structure, and style of a document."</p>
+          <p>The  DOM standard is separated into 3 different parts:</p>
+         <p>1: Core DOM - standard model for all document types,
+            2: XML DOM - standard model for XML document,
+           3: HTML DOM - standard model for HTML documents.</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select on element from the DOM?</div>
+      <div class="collapse-content">
+        <p>To select an element from the DOM in JavaScript, you can use the following methods</p>
+        <p>getElementById(): Finds an element based on its unique ID.</p>
+        <p>getElementsByTagName(): Searches for elements by tag name.</p>
+        <p>getElementsByClassName(): Searches for elements by class name.</p>
+        <p>getElementsByName(): Searches for elements by name attribute.</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM
+        , and why is it usefule?
+      </div>
+      <div class="collapse-content">
+        <p>Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call
+           an event on a particular target using the .target property of the event object.</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        How do you manipulate an elements attribute 
+        and style using the DOM?
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+   
+</div>
+<!-- add section Bolg end -->
+
+<!-- add History start  -->
+ <div id="add-section-history" class="hidden container mx-auto">
+ </div>
+<!-- add History end  -->
+
+<!-- add congrates start -->
+<div id="add-section-container" class="container mx-auto hidden">
+ <div class="w-2/5  bg-white rounded-md text-center space-y-2 pb-3">
+  <h2 class="text-4xl font-bold">congrates!</h2>
+ <div class="flex justify-center" > <img class="" src="./assets/coin.png"></div>
+  <p>you Have do nated for Humunkind </p>
+  <h3 class="text-2xl font-bold">Successfully</h3>
+  <button class="btn text-lg font-semibold">close confirmation</button>
+ </div>
+</div>
+<!-- add congrates end -->
+ </main>
     <script src="./js/funtion.js"></script>
     <script src="./js/donation.js"></script>
+    <script src="./js/showadd.js"></script>
    
    
 </body>

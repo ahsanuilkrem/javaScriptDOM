@@ -14,7 +14,6 @@ document.getElementById('historyAmound').addEventListener('click', function(){
 });
 
 // button color chac
-
 const historyTab = document.getElementById('historyAmound');
 const donationbutton = document.getElementById('denotion-button');
 

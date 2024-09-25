@@ -58,11 +58,9 @@
             <textarea id="amount-case" type="text" cols="45" rows="5" placeholder="Write Donation Amount"
             class="input input-bordered" required ></textarea>
           </div>
-
-          <div class="">
-            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">Donate Now</button>
+              <div>
+            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36" onclick="my_modal_1.showModal()">Donate Now</button>
            </div>
-
       </div>
     </div>
   </div>
@@ -92,7 +90,8 @@
             class="input input-bordered" required ></textarea>
           </div>
             <div>
-            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">Donate Now</button>
+            <button id="btn-add-money" class="btn btn-md bg-lime-300 px-36">
+              Donate Now</button>
            </div>
       </div>
     </div>
@@ -175,7 +174,13 @@
         and style using the DOM?
       </div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>To do so, you have to find the elements first. There are several ways to do this:</p>
+
+         <p> Finding HTML elements by id</p>
+         <p> Finding HTML elements by tag name</p>
+         <p>Finding HTML elements by class name </p>
+         <p> Finding HTML elements by CSS selectors</p>
+         <p> Finding HTML elements by HTML object collections</p>
       </div>
     </div>
    
@@ -187,17 +192,24 @@
  </div>
 <!-- add History end  -->
 
-<!-- add congrates start -->
-<div id="add-section-container" class="container mx-auto hidden">
- <div class="w-2/5  bg-white rounded-md text-center space-y-2 pb-3">
-  <h2 class="text-4xl font-bold">congrates!</h2>
- <div class="flex justify-center" > <img class="" src="./assets/coin.png"></div>
-  <p>you Have do nated for Humunkind </p>
-  <h3 class="text-2xl font-bold">Successfully</h3>
-  <button class="btn text-lg font-semibold">close confirmation</button>
- </div>
-</div>
-<!-- add congrates end -->
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal text-center">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">congrates!</h3>
+    <div class="flex justify-center" > <img class="" src="./assets/coin.png"></div>
+    <p class="py-1">you Have do nated for Humunkind</p>
+    <h3 class="text-2xl font-bold">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn ">Close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
  </main>
     <script src="./js/funtion.js"></script>
     <script src="./js/donation.js"></script>

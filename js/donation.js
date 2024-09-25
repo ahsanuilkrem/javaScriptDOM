@@ -43,7 +43,6 @@ if(addmoney !== 'number'){
 else{
     alert('falied to add money')
 }
-     
 });
 
 
@@ -61,16 +60,9 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     else{
         alert('falied to add money');
     }
-
 });
 
-// add section congrates start
 
-document.getElementById('btn-add-money').addEventListener('click', function(){
-
-    const donation = document.getElementById('add-section-container').innerHTML = donation;
-   
-});
 
 
 
